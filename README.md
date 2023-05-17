@@ -1,2 +1,2 @@
-# python
-Public repository for python code created in class
+# Python
+Public repository for Python code created in class
