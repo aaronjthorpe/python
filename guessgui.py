@@ -20,7 +20,7 @@ import tkinter.messagebox as mb
 from random import randint
 
 #Generate random number and initialise number of guesses
-randomNumber = randint(1,100)
+randomNumber = randint(1,10)
 guesses = 0
 
 #function for resetting game
@@ -44,7 +44,8 @@ def reset():
 #function to confirm quit action and quit program if yes.
 def quityesno():
     answer = mb.askyesno("Quit?","Are you sure you want to quit?")
-    if answer == True:
+    #if answer == True:
+    if answer:
         mywindow.destroy()
 
 #function to trigger check of guess if user presses Enter ('return') on entrybox
@@ -83,7 +84,7 @@ lbltitle = tk.Label(
     width=40, height=2,
     bg="deepskyblue",
     fg="white",
-    font=("Arial","16","bold"))
+    font=("Arial",16,"bold"))
 lbltitle.pack()
 
 #create entry box
@@ -112,7 +113,7 @@ lblimgicon = tk.Label(image=imgicon)
 lblimgicon.place(x=10,y=10,anchor="nw")
 
 #create label for number of guesses
-lblguesses = tk.Label(text="Guesses: " + str(guesses),bg="deepskyblue",fg="white",font=("arial","12"))
+lblguesses = tk.Label(text="Guesses: " + str(guesses),bg="deepskyblue",fg="white",font=("Arial",12))
 lblguesses.place(x=700,y=10)
 
 #create menubar and associate with window
@@ -120,7 +121,7 @@ menubar = tk.Menu(mywindow)
 mywindow.config(menu=menubar)
 
 #create file menu and associate with menu bar
-file_menu= tk.Menu(menubar)
+file_menu= tk.Menu(menubar,tearoff=False)
 file_menu.add_command(label='Reset',command=reset) #call reset function
 file_menu.add_separator()
 file_menu.add_command(label='Exit',command=quityesno) #call quit function
