@@ -1,0 +1,183 @@
+Python Exercises
+
+Operators
+1.
+Open a Python (run python.exe from a terminal), enter the following expressions,
+and observe the results.  What does each expression do?  
+Play around with variations of the expressions using different numbers:
+8			    8 / 12
+8 * 2			8 // 12
+8 ** 2			8 / 0
+
+Basic prgorams - print()
+2.
+Write a Python program that displays the string "Hello, world!" to the screen.
+
+3.
+Write a Python program that prints (displays) your name, address, and telephone number.
+
+Basic programs - expressions
+4.
+Write a Python program to calculate and display the area of a rectangle. The program
+should ask for inputs for length and height of the rectangle, and then use the
+formula length * height.
+
+5.
+Write a Python program to calculate and display the area of a triangle. The program
+should ask for inputs for base length and height of the triangle, and then use the 
+formula 0.5 * base * height.
+
+6.
+An employee’s total weekly pay equals the hourly wage multiplied by the total number 
+of regular hours plus any overtime pay. Overtime pay equals the total overtime hours 
+multiplied by 1.5 times the hourly wage. Write a program that takes as inputs the 
+hourly wage, total regular hours, and total overtime hours and displays an employee’s 
+total weekly pay
+
+Introducing modules
+7.
+Write a Python function to calculate the area of a circle. You will need to ask the user
+for the radius of the circle and then use the formula pi * radius squared. 
+Hint: You will need to import pi from the math module
+
+8.
+Write a program that takes the radius of a sphere (a floating-point number) as input 
+and then outputs the sphere’s diameter, circumference, surface area, and volume.
+(You may need to look up formulae for these calculations online)
+
+Data type conversion
+9.
+Write a Python program that accepts the user’s name (as text) and age (as a number) as input. 
+The program should output a sentence containing the user’s name and age.
+
+Creating functions
+10.
+Take exercises 4 and 5 above (area of rectangle, area of triangle) and create
+functions for these calculations.  Call the functions to calculate the areas of several
+rectangles and triangles.  Bonus:  Store the functions in a separate file and import them.
+
+11.
+Write a python program that saves the current date and time ("now") as a variable.
+Display this, then seperately displays the current year, month, hour, minute, and weekday.
+Bonus: see if you can display the date in the format "Friday, 13 September 2024, 15:12:34"
+
+12.
+Write a function that takes a user's name and age as input.  The function should output a
+greeting and tell them their year of birth. (Might be off by 1 depending on birthday.)  
+Bonus:  Ask for birthday (or birthmonth) and then adjust if they've had a birthday this year
+
+If/Else
+13.  
+Write a program that accepts the lengths of three sides of a triangle as inputs.
+The program output should indicate if the triangle is equilateral
+(if all the sides are the same length).  Create this as a function which returns
+a boolean value.  Run an if/else test that produces a different message based on
+whether the triangle input is equilateral.
+
+Lists
+14.
+Write a program that takes a list of integers as input and then returns the 
+average of the numbers in the list.
+
+15.
+Write a function that takes a string as input and then returns the reverse 
+of that string.
+eg. "abcde" becomes "edcba"
+
+Games
+16.
+Write a guessing game.  Have the computer think of a random number between 0
+and 100.  Ask the player to guess the number.  Tell them if their guess 
+is too high or too low or if they guessed the correct number. Track how many
+guesses it takes for the player to guess the number.
+Bonus:  give the player a fixed number of guesses and make them 'lose' if 
+they take too many guesses.
+Hint:  you'll need a specific function from the 'random' module to have the 
+computer think of a number.
+
+17.  Write a program that plays the game 'rock, paper, scissors.'  The computer 
+should play a move at the same time as a move is input from the user.
+A user should be told if their move is not valid.  The game should specifiy if
+the player wins, loses, or draws with the computer.
+Bonus 1:  keep score counters of how many games the player has won, drawn, 
+and lost.
+Bonus 1a: Can you save this score in a file?
+Bonus 2:  Expand the game to be the version from The Big Bang Theory:  rock,
+paper, scissors, lizard, Spock.
+
+Back to lists
+18.  Back to lists.  Create a program that has a list of names.  Let the user add
+names to the list.
+Bonus:  Adjust the program so that names can also be removed from the list
+
+Tkinter
+19.
+Create a tkinter application that gets the user to enter their name, address, 
+and e-mail address.  It should display the values that they enter in a 
+formatted string, on a label. 
+Bonus:  Display the output in a pop-up message box. 
+
+20. Using question 6 above (employee’s total weekly pay).  
+Create a tkinter application that takes input of the users data and calculates
+and displays their weekly pay. 
+
+21. 
+Create a tkinter application with an entry box, a button, and a list box. 
+The user should be able to type some text into the entry box, click the button and 
+have the text added to the list box. 
+Bonus:  Let the user select a line of text from the list box and remove it from the list.
+
+22. 
+Create a tkinter application that lets the user order a meal from a fast-food restaurant. 
+For example, a in Subway-style restaurant.  You might ask the user what bread they would
+like, what cheese, and what salads.   Use a combination of entry boxes, radio buttons, 
+check buttons and combo boxes to let the user place their order. 
+Hint – RadioButtons, CheckButtons, and ComboBoxes need to use tkinter variables. 
+Once the user has made all their selections, create a formatted string containing
+their order.  Once you have this string you can: 
+a) display it in a label 
+b) display it in a pop-up messagebox
+and/or
+c) save it to a file. 
+
+24.
+Create a tkinter app that allows the user to roll a dice.  Find images on the Internet
+that you can use to display the faces of the dice.
+
+25.
+Create a text file that has several usernames and passwords stored in the 
+format “username,password” eg. “bob,pass123”.  There should be 1 username
+and password per line in the file. Create a tkinter app that asks the user
+to type their username and password. The app should read the file and check
+if their username and password is correct and display a message 
+letting the user know whether they were authenticated successfully. 
+
+26. 
+Create a converter application.  Examples include Celcius to Farenheit,
+metres to feet, kilograms to pounds, kilojoules to calories.
+Code your app to convert values in both directions.
+Add a 'log' that will store conversions in a file.  The log should include
+the date and time of conversion. Allow the user to display the log.  
+The file should display in a list box or TreeView.
+Bonus:  Display the log in a new window.  This will be a tkinter Toplevel object.
+Add a button to close the new window. 
+
+27.
+Update your converter to allow for multiple conversions 
+(eg. temperature AND distance AND weight, etc.) 
+For a distance calculation, apply rounding.  e.g. 6 metres becomes
+'4 feet 11 inches' rather than 4.9212 feet.
+
+28.
+Update any of your tkinter apps to allow for event binding.
+e.g. create keyboard shortcuts for button presses
+e.g. allow the user to press the 'enter' key to calculate
+e.g. have an action occur when the mouse moves over an item or
+clicks on something
+
+
+29. 
+Convert the guessing game in question 16 to a tkinter application 
+
+30. 
+Convert the rock, paper, scissors game to a tkinter application.
