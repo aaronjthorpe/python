@@ -1,0 +1,5 @@
+This is the first line of the file
+This is the second line of the file
+The third line of the file looks like this
+There's also a fourth line for this file
+And finally a fifth line

@@ -1,7 +1,0 @@
-apple
-banana
-cherry
-dragonfruit
-somethingthatstartswithe
-I'm writing data to a file.
-21st of April, 2026 at 14:16:10

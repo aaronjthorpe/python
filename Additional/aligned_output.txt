@@ -1,0 +1,6 @@
+Name              Age                 Country
+---------------------------------------------
+Alice              30               Australia
+Bob                25                  Canada
+Charlie            35           United States
+Diana              28                      UK

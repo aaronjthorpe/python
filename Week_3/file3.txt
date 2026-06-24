@@ -1,0 +1,11 @@
+Adding some content
+To the file.
+______________________________Adding some content
+To the file.
+______________________________Reopening the file in append mode - note that because we did not have a backslash-n at the end of the last line (code line 24), this will be added to the line with the --------
+Add some additional content.
+______________________________Adding some content
+To the file.
+______________________________Note that because we did not have a backslash-n at the end of the last line (code line 24), this will be added to the line with the --------
+Add some additional content.
+______________________________

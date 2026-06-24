@@ -1,0 +1,2 @@
+If I open the same file again in write mode
+All previous content will be destroyed.  'Whoops!'
